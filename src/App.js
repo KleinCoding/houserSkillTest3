@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import {HashRouter as Router} from 'react-router-dom'
 import './App.css';
+import Header from './Components/Header/Header.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+    
+   <Router>
+   <button onClick={
+// event => (window.location.href = `/#${this.props.match.url}/Dashboard/`)
+event => (window.location.href = "#/Dashboard")
+    }>
+          Dashboard
+        </button>
+     <header>
+       {/* <ul>
+         <li><Link to ='/'>Dashboard</Link></li>  //THESE ARE BEING RENDERED ON THE DASHBOARD COMPONENT NOT HERE!!!
+         <li><Link to ='/Wizard'>Wizard</Link></li>
+         <li><Link to ='/Header'>Header</Link></li>
+         <li><Link to ='/House'>House</Link></li>
+         <li><Link to ='/ohnelly'>404 now yall</Link></li>
+
+       </ul> */}
+     </header>
+   </Router> 
+   </div>
   );
 }
 

@@ -1,0 +1,4 @@
+-- ALTER TABLE houses
+-- ADD COLUMN img TEXT
+-- ADD COLUMN mortgage INT
+-- ADD COLUMN rent INT
